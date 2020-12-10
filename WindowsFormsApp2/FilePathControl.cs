@@ -28,7 +28,6 @@ namespace WindowsFormsApp2
         {
             using(OpenFileDialog ofd = new OpenFileDialog())
             {
-                ofd.Filter = "Text files(*.txt)|*.txt";
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
                     FilePathTextBox.Text = ofd.FileName;
